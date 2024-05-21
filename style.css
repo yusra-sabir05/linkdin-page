@@ -1,0 +1,813 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+body{
+    background-color:black;
+}
+.navbar{
+    background-color:rgb(41, 40, 40);
+    /* color: white; */
+    box-shadow: 0 1px 8px rgb(131, 129, 129);
+    display: flex;
+    text-align:center;
+    padding: 0px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+}
+.logo{
+    /* justify-content: left; */
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png); */
+    
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 40px;
+    border: 1px solid gray;
+    /* color: aqua; */
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    color: white;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search-box button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    border: none;
+    background-color:rgb(41, 40, 40); 
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color:rgb(41, 40, 40);
+}
+
+.search-box button i {
+    color: white;
+    font-size: 18px;
+    
+}
+.center {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 40%;
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 180px;
+    margin-right: 1px;
+   
+    
+}
+.center a {
+    align-items: center;
+    margin: 0px 10px 10px 0px;
+    padding-left:100px ;
+    color: gray;
+    transition:  0.3s ease;
+    padding: 11px ;
+    padding-right: 0px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+} 
+.center a:hover {
+    /* background-color: #f2f2f2; */
+    color: white;
+}
+
+
+.rightside {
+    display:flex;
+    margin-left: 300px;
+    align-items: end;
+    justify-content:flex-start;
+    
+    
+  }
+  
+  
+  .rightside i:hover {
+    /* background-color: #f2f2f2; */
+    color: white;
+  }
+  
+  .rightside i {
+    font-size: 20px;
+    margin: 0px 20px 0px ;
+    color: gray;
+    transition:  0.3s ease;
+    padding: 11px ;
+    padding-right: 1px;
+    border-radius: 10px;
+    
+  }
+ 
+  
+  .rightside img {
+    height: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: black;
+  }
+  /* --------------------------------------left side bar start---------------------------------------------------- */
+ .leftsidebar {
+    width: 250px;
+    height: 520%;
+    position: fixed;
+    top: 9%;
+    left: 10%;
+    background-color:rgb(41, 40, 40);
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+   
+  .leftsidebar nav ul {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .leftsidebar nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .leftsidebar nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 5px;
+    display: block;
+    text-transform:capitalize;
+  
+  }
+  
+  .leftsidebar nav ul li a:hover {
+    background-color: gray;
+  }
+  
+  .leftsidebar nav ul li a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit:cover;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+  .leftsidebar nav ul li  p{
+    margin-left: 85px;
+    margin-top: 8px;
+    color: white;
+    font-size: medium;
+  }
+   .intro{
+    margin-left: 60px;
+    margin-top: 10px;
+    color:gray;
+    font-size: small;
+  }
+  .hr{
+    margin-top: 10px;
+    color: #333;
+
+  }
+  .viewers{
+    margin-left:10px ;
+    margin-top: 25px;
+    color:gray;
+    font-size: small;
+
+  }
+  .impression{
+    margin-left:10px ;
+    margin-top: 5px;
+    color:gray;
+    font-size: small;
+
+  }
+  .sechr{
+    margin-top: 20px;
+  }
+  .goal{
+    margin-left:10px ;
+    margin-top: 15px;
+    color:gray;
+    font-size: small;
+
+  }
+  
+
+  .pkr-link {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+     color: aliceblue;
+    }
+
+   .fa-user-group {
+    margin-bottom:10px ;
+      /* margin-right: px; */
+      margin-left: 10px;
+      height: 10%;
+      color: yellow;
+      font-size: medium;
+    }
+  }
+  .thhr{
+    margin-top: 10px;
+
+
+  }
+  .saved-link {
+    color:white;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: aliceblue;
+    }
+
+   .fa-bookmark {
+      margin-right: 5px;
+      margin-left: 10px;
+      margin-top: 10px;
+      color: gray;
+      height: 100%;
+    }
+  }
+  .frhr{
+    margin-top: 10px;
+
+  }
+  .recent{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: gray;
+    font-size: 15px;
+  }
+  .done-link {
+    color:white;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: aliceblue;
+    }
+
+   .fa-gamepad {
+      margin-top: 5px;
+      margin-right: 2px;
+      margin-left: 6px;
+      color:gray;
+      height: 5px;
+      font-size: 10px;
+    }
+  }
+  .fvhr{
+    margin-top: 10px;
+  }
+  
+  .card-link {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: aliceblue
+    }
+
+   .fa-credit-card {
+      margin-right: 6px;
+      margin-left: 10px;
+      height: 10px;
+      font-size: 10px;
+    }
+  }
+  .all{
+    color: gray;
+    margin-right: 80px;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+/* ----------------------center bar------------------------------------- */
+
+.centerbar{
+    /* border:2px solid aqua ; */
+    width:550px ;
+    height: 1500px;
+    padding:20px 0px ;
+    margin-left: 420px;
+}
+.user-search-container {
+    
+    margin-top: 0px;
+    display: flex;
+    height: 90px;
+    width: 96%;
+    align-items: center;
+    background-color:rgb(41, 40, 40);
+    border-radius: 5px;
+    /* padding: 10px; */
+    margin-bottom: 0px;
+    margin-left: 10px;
+    box-sizing: border-box;
+  }
+  
+  .user-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .my-search-box {
+    display: flex;
+    flex-grow: 1;
+    /* border: 1px ; */
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 2px;
+    /* box-sizing: border-box; */
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: gray;
+  }
+  
+  .my-search-input {
+    /* flex-grow: 1; */
+    border: none;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: aliceblue;
+    background-color: gray;
+    /* padding: 5px;  */
+    box-sizing:border-box;
+  }
+  .card-options {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-option {
+    padding: 0px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.card-option:hover {
+    background-color: #eee;
+}
+  .sxhr{
+    margin-top: 8px;
+    color: #333;
+  }
+  /* ---------------------------post---------------------------------- */
+  .user-post-container{
+    margin-top: 20px;
+    background-color:rgb(41, 40, 40);;
+    height:350px;
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-left: 17px;
+    /* margin: auto; */
+    /* border: 1px solid aqua; */
+    border-radius: 5px;
+    
+  }
+  .section1{
+    
+    height: 15%;
+    /* background-color: aqua */
+}
+.postprofile{
+  height: 40px;
+  width: 100px;
+ 
+  border-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+ 
+}
+.postuser{
+    font-style:oblique;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding:0px 5px ;
+    text-decoration: none;
+    color:white;
+
+
+  &:hover {
+    color: rgb(69, 69, 150);
+    
+  }
+}
+.poststatus{
+    padding-left: 20px;
+  
+    margin-left: 20px;
+    color:gray;
+    font-size: 15px;
+  
+}
+ /* .sec2{
+  height: 85%;
+  width: 100px;
+  /* margin-bottom: auto; */
+/* } */
+ 
+
+.postpicture{
+ background-image : url(https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);  
+ background-repeat: no-repeat; 
+ background-size: 100% 100%; 
+ border-top-left-radius: 5px;  
+ border-top-right-radius: 5px; 
+ position: relative; 
+ display:flex; 
+ justify-content:center;  
+ align-items:center;  
+ /* border: 1px solid;  */
+ height: 230px;
+
+ margin-top:15px;
+ margin-left: 7px;
+  
+ padding-left:475px;
+ margin-right: 10px;   
+} 
+.postcenter{
+  
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  height: 60%;
+  width: 60%;
+  margin-top: 30px;
+  margin-left: 100px;
+  gap: 150px;
+  margin-right: 100px;
+ 
+  
+}
+.postcenter a {
+  align-items: center;
+  margin: 0px 10px 10px 0px;
+  padding-left:100px ;
+  color: white;
+  transition:  0.3s ease;
+  padding: 11px ;
+  padding-right: 0px;
+  margin-left: 10px;
+  border-radius: 10px;
+  
+} 
+.like{
+  
+}
+.postcenter a:hover {
+  /* background-color: #f2f2f2; */
+  /* color: blue; */
+}
+.section1{
+    
+  height: 15%;
+  /* background-color: aqua */
+}
+.postprofile{
+height: 40px;
+width: 40px;
+
+border-radius: 50px;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+
+}
+.postuser{
+  font-style:oblique;
+  font-weight: bolder;
+  text-transform: capitalize;
+  padding:0px 5px ;
+  text-decoration: none;
+  color:white;
+
+
+&:hover {
+  color: rgb(69, 69, 150);
+  
+}
+}
+.poststatus{
+  padding-left: 20px;
+
+  margin-left: 20px;
+  color:gray;
+  font-size: 15px;
+
+}
+/* .sec2{
+height: 85%;
+width: 100px;
+/* margin-bottom: auto; */
+/* } */
+
+
+.postpicture{
+background-image : url(https://images.pexels.com/photos/23532647/pexels-photo-23532647/free-photo-of-emerald-lake.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);  
+background-repeat: no-repeat; 
+background-size: 100% 100%; 
+border-top-left-radius: 5px;  
+border-top-right-radius: 5px; 
+position: relative; 
+display:flex; 
+justify-content:center;  
+align-items:center;  
+/* border: 1px solid;  */
+height: 230px;
+
+margin-top:15px;
+margin-left: 7px;
+
+padding-left:475px;
+margin-right: 10px;   
+} 
+.postcenter{
+
+display:flex;
+justify-content:space-around;
+align-items:center;
+height: 60%;
+width: 60%;
+margin-top: 30px;
+margin-left: 100px;
+gap: 150px;
+margin-right: 100px;
+
+
+}
+.postcenter a {
+align-items: center;
+margin: 0px 10px 10px 0px;
+padding-left:100px ;
+color: white;
+transition:  0.3s ease;
+padding: 11px ;
+padding-right: 0px;
+margin-left: 10px;
+border-radius: 10px;
+
+} 
+.like{
+
+}
+.postcenter a:hover {
+/* background-color: #f2f2f2; */
+/* color: blue; */
+}
+.section1{
+    
+  height: 15%;
+  /* background-color: aqua */
+}
+.postprofile{
+height: 40px;
+width: 40px;
+
+border-radius: 50px;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+
+}
+.postuser{
+  font-style:oblique;
+  font-weight: bolder;
+  text-transform: capitalize;
+  padding:0px 5px ;
+  text-decoration: none;
+  color:white;
+
+
+&:hover {
+  color: rgb(69, 69, 150);
+  
+}
+}
+.poststatus{
+  padding-left: 20px;
+
+  margin-left: 20px;
+  color:gray;
+  font-size: 15px;
+
+}
+/* .sec2{
+height: 85%;
+width: 100px;
+/* margin-bottom: auto; */
+/* } */
+
+
+.postpicture{
+background-image : url(https://images.pexels.com/photos/23532647/pexels-photo-23532647/free-photo-of-emerald-lake.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);  
+background-repeat: no-repeat; 
+background-size: 100% 100%; 
+border-top-left-radius: 5px;  
+border-top-right-radius: 5px; 
+position: relative; 
+display:flex; 
+justify-content:center;  
+align-items:center;  
+/* border: 1px solid;  */
+height: 230px;
+
+margin-top:15px;
+margin-left: 7px;
+
+padding-left:475px;
+margin-right: 10px;   
+} 
+.postcenter{
+
+display:flex;
+justify-content:space-around;
+align-items:center;
+height: 60%;
+width: 60%;
+margin-top: 30px;
+margin-left: 100px;
+gap: 150px;
+margin-right: 100px;
+
+
+}
+.postcenter a {
+align-items: center;
+margin: 0px 10px 10px 0px;
+padding-left:100px ;
+color: white;
+transition:  0.3s ease;
+padding: 11px ;
+padding-right: 0px;
+margin-left: 10px;
+border-radius: 10px;
+
+} 
+.like{
+
+}
+.postcenter a:hover {
+/* background-color: #f2f2f2; */
+/* color: blue; */
+}
+/* -------------------------right side--------------------------------------------- */
+.rightsidebar{
+    /* border: 2px solid aqua ; */
+    width: 250px;
+    height: 520%;
+    position: fixed;
+    padding:20px 10%;
+    top:9%;
+    right: 1%;
+    margin-right: 45px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    background-color:rgb(41, 40, 40);
+    
+}
+.rightsidebar nav h3{
+  color:white;
+ 
+  text-transform: capitalize;
+ 
+  
+}
+
+
+.rightsidebar {
+  width: 250px;
+  float: right;
+  padding: 20px;
+  background-color: rgb(41, 40, 40);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  width: 0%; 
+}
+
+.right-bar {
+  width: 0%; 
+  background-color: #f2f2f2; 
+  padding: 0px; 
+}
+.cardprofile{
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  margin-top: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+ 
+}
+.carduser{
+  font-style:oblique;
+  font-weight: bolder;
+  text-transform: capitalize;
+  padding:0px 5px ;
+  text-decoration: none;
+  color:white;
+
+
+  &:hover {
+    color: rgb(69, 69, 150);
+    
+  }
+}
+.onlinestatus{
+  padding-left: 20px;
+  
+  margin-left: 20px;
+  color:gray;
+  font-size: 15px;
+
+}
+
+
+  .my-follow-input {
+    flex-grow: 0;
+    border: none;
+    border-radius: 50px;
+    height: 20px;
+    width: 90px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 5px;
+    color: aliceblue;
+    background-color: gray;
+    /* padding: 5px;  */
+    box-sizing:border-box;
+  }
+  .svhr{
+    margin-top: 5px;
+    
+  }
+
+
+
+
+
+
+
+
+
+
